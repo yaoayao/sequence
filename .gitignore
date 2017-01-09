@@ -1,0 +1,10 @@
+﻿# 统一排除目录
+
+### Maven ###
+/target
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
