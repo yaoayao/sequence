@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.cc</groupId>
+    <groupId>com.cc.sequence</groupId>
     <artifactId>sequence</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -14,7 +14,7 @@
         <module>datasource</module>
     </modules>
     <properties>
-        <heptagram.common.version>1.0.0</heptagram.common.version>
+        <sequence.version>1.0-SNAPSHOT</sequence.version>
         <springframework.version>4.3.3.RELEASE</springframework.version>
         <mysql.connector.version>5.1.30</mysql.connector.version>
         <groovy.version>2.4.7</groovy.version>
@@ -28,6 +28,23 @@
     </properties>
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>com.cc.sequence</groupId>
+                <artifactId>common</artifactId>
+                <version>${sequence.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cc.sequence</groupId>
+                <artifactId>datasource</artifactId>
+                <version>${sequence.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cc.sequence</groupId>
+                <artifactId>service</artifactId>
+                <version>${sequence.version}</version>
+            </dependency>
+
             <!-- Spring framework dependencies -->
             <dependency>
                 <groupId>org.springframework</groupId>

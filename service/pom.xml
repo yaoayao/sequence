@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>sequence</artifactId>
-        <groupId>com.cc</groupId>
+        <groupId>com.cc.sequence</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -12,13 +12,15 @@
     <artifactId>service</artifactId>
     <dependencies>
         <dependency>
-            <groupId>com.cc</groupId>
+            <groupId>com.cc.sequence</groupId>
             <artifactId>common</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.cc</groupId>
+            <groupId>com.cc.sequence</groupId>
             <artifactId>datasource</artifactId>
         </dependency>
+
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
